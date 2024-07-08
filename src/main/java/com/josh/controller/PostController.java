@@ -44,6 +44,7 @@ public class PostController {
 	
 	@GetMapping("/posts/{postId}")
 	public ResponseEntity<Post> findPostByIdHandler(@PathVariable Integer postId) throws Exception{
+		
 		Post post = postService.findPostById(postId);
 		
 		return new ResponseEntity<Post>(post , HttpStatus.ACCEPTED);
@@ -51,6 +52,7 @@ public class PostController {
 	
 	@GetMapping("/posts/user/{userId}")
 	public ResponseEntity<List<Post>> findUsersPost(@PathVariable Integer userId){
+		
 		
 		List<Post> posts = postService.findPostByUserId(userId);
 		return new ResponseEntity<List<Post>>(posts , HttpStatus.OK);

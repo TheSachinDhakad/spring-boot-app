@@ -29,16 +29,7 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
-	@PostMapping("/user")
-	public User createUser(@RequestBody User user) {
 
-		
-
-		User saveUser = userService.registerUser(user);
-
-		return saveUser;
-
-	}
 
 	@GetMapping("/api/users")
 	public List<User> getUsers() {
