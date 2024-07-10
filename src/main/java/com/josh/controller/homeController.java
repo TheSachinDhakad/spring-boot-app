@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class homeController {
 
-	
-	@GetMapping("/")
-	public String homeController() {
-		return "Hello";
-	}
+    @GetMapping("/")
+    public String homeController() {
+        return "Welcome, create your own social media app using my API. Endpoint: https://spring-boot-app-production-f847.up.railway.app/";
+    }
 }
