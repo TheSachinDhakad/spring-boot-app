@@ -48,7 +48,7 @@ https://spring-boot-app-production-f847.up.railway.app/
     "caption" : "my Image"
 }
 
-## RESPONSE 
+## Response Body:
 {
   "id": 1,
   "caption": "my Image",
@@ -68,17 +68,17 @@ https://spring-boot-app-production-f847.up.railway.app/
   "liked": []
 }
 
-Get Post by ID
+## Get Post by ID
 URL: /posts/{postId}
 Method: GET
 Description: Retrieves a post by its ID.
 Response: Post object
-Get Posts by User
+## Get Posts by User
 URL: /posts/user/{userId}
 Method: GET
 Description: Retrieves all posts by a specific user.
 Response: List of Post objects
-Get All Posts
+## Get All Posts
 URL: /posts
 Method: GET
 Description: Retrieves all posts.
@@ -88,18 +88,18 @@ URL: /posts/save/{postId}/user/{userId}
 Method: PUT
 Description: Saves a post.
 Response: Post object
-Like Post
+## Like Post
 URL: /posts/like/{postId}/user/{userId}
 Method: PUT
 Description: Likes a post.
 Response: Post object
 User Endpoints
-Get All Users
+## Get All Users
 URL: /api/users
 Method: GET
 Description: Retrieves all users.
 Response: List of User objects
-Get User by ID
+## Get User by ID
 URL: /api/user/{userId}
 Method: GET
 Description: Retrieves a user by their ID.
@@ -108,7 +108,7 @@ Update User
 URL: /api/user/{userId}
 Method: PUT
 Description: Updates a user's information.
-Request Body:
+## Request Body:
 json
 Copy code
 {
@@ -119,22 +119,22 @@ Copy code
     "gender": "male"
 }
 Response: User object
-Follow User
+## Follow User
 URL: /api/users/follow/{userId1}/{userId2}
 Method: PUT
 Description: User with ID userId1 follows user with ID userId2.
 Response: User object
-Search Users
+## Search Users
 URL: /api/users/search
 Method: GET
 Description: Searches for users by query.
 Query Parameters: query (string)
 Response: List of User objects
-Delete User
+## Delete User
 URL: /api/user/{userId}
 Method: DELETE
 Description: Deletes a user by ID.
-Response:
+## Response:
 json
 Copy code
 {
